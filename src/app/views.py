@@ -5,13 +5,13 @@ Created on Sep 17, 2017
 '''
 from flask import render_template, flash, redirect
 from app import app
-from .forms import LoginForm
+from forms import LoginForm
 
 # index view function suppressed for brevity
 @app.route('/')
 @app.route('/index')
 def index():
-    user = {'nickname': 'Miguel'} 
+    user = {'nickname': 'Soma'} 
     return render_template('index.html', 
                            title='Home',
                            user=user)
